@@ -51,7 +51,7 @@ class Prodi extends CI_Controller
             );
             $this->prodi_model->insert_data($data, 'prodi');
             $this->session->set_flashdata('pesan', '<div class="alert alert-success alert-dismissible fade show" role="alert">
-                Data prodi berhasil ditambahkan!<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <i class="icon fas fa-check"></i> Data prodi berhasil ditambahkan!<button type="button" class="close" data-dismiss="alert" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
                 </button>
                 </div>');
@@ -112,7 +112,7 @@ class Prodi extends CI_Controller
         );
         $this->prodi_model->update_data($where, $data, 'prodi');
         $this->session->set_flashdata('pesan', '<div class="alert alert-success alert-dismissible fade show" role="alert">
-            Data prodi berhasil diupdate!<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <i class="icon fas fa-check"></i> Data prodi berhasil diupdate!<button type="button" class="close" data-dismiss="alert" aria-label="Close">
             <span aria-hidden="true">&times;</span>
             </button>
             </div>');
@@ -124,7 +124,7 @@ class Prodi extends CI_Controller
         $where = array('id_prodi' => $id_prodi);
         $this->prodi_model->hapus_data($where, 'prodi');
         $this->session->set_flashdata('pesan', '<div class="alert alert-success alert-dismissible fade show" role="alert">
-            Data prodi berhasil dihapus!<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <i class="icon fas fa-check"></i> Data prodi berhasil dihapus!<button type="button" class="close" data-dismiss="alert" aria-label="Close">
             <span aria-hidden="true">&times;</span>
             </button>
             </div>');

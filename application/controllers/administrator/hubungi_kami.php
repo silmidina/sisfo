@@ -67,7 +67,7 @@ class Hubungi_kami extends CI_Controller
       redirect('administrator/hubungi_kami');
     } else {
       $this->session->set_flashdata('pesan', '<div class="alert alert-danger alert-dismissible fade show" role="alert">
-      Pesan Tidak Terkirim!<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+      <i class="icon fas fa-ban"></i> Pesan Tidak Terkirim!<button type="button" class="close" data-dismiss="alert" aria-label="Close">
       <span aria-hidden="true">&times;</span>
       </button>
       </div>');
@@ -80,7 +80,7 @@ class Hubungi_kami extends CI_Controller
     $where = array('id_hubungi' => $id_hubungi);
     $this->hubungi_model->hapus_data($where, 'hubungi');
     $this->session->set_flashdata('pesan', '<div class="alert alert-success alert-dismissible fade show" role="alert">
-            Pesan berhasil dihapus!<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+    <i class="icon fas fa-check"></i> Pesan berhasil dihapus!<button type="button" class="close" data-dismiss="alert" aria-label="Close">
             <span aria-hidden="true">&times;</span>
             </button>
             </div>');

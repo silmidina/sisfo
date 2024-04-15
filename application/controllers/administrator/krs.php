@@ -37,7 +37,7 @@ class Krs extends CI_Controller
 
         if ($this->mahasiswa_model->get_by_id($nim) == null) {
             $this->session->set_flashdata('pesan', '<div class="alert alert-danger alert-dismissible fade show" role="alert">
-                Data mahasiswa yang anda input belum terdaftar!<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <i class="icon fas fa-ban"></i> Data mahasiswa yang anda input belum terdaftar!<button type="button" class="close" data-dismiss="alert" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
                 </button>
                 </div>');
@@ -127,7 +127,7 @@ class Krs extends CI_Controller
             );
             $this->krs_model->insert($data);
             $this->session->set_flashdata('pesan', '<div class="alert alert-success alert-dismissible fade show" role="alert">
-                Data KRS berhasil ditambahkan!<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <i class="icon fas fa-check"></i> Data KRS berhasil ditambahkan!<button type="button" class="close" data-dismiss="alert" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
                 </button>
                 </div>');
@@ -187,7 +187,7 @@ class Krs extends CI_Controller
         );
         $this->krs_model->update($id_krs, $data);
         $this->session->set_flashdata('pesan', '<div class="alert alert-success alert-dismissible fade show" role="alert">
-            Data KRS berhasil diupdate!<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <i class="icon fas fa-check"></i> Data KRS berhasil diupdate!<button type="button" class="close" data-dismiss="alert" aria-label="Close">
             <span aria-hidden="true">&times;</span>
             </button>
             </div>');
@@ -199,7 +199,7 @@ class Krs extends CI_Controller
         $where = array('id_krs' => $id);
         $this->krs_model->hapus_data($where, 'krs');
         $this->session->set_flashdata('pesan', '<div class="alert alert-success alert-dismissible fade show" role="alert">
-            Data krs berhasil dihapus!<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <i class="icon fas fa-check"></i> Data krs berhasil dihapus!<button type="button" class="close" data-dismiss="alert" aria-label="Close">
             <span aria-hidden="true">&times;</span>
             </button>
             </div>');

@@ -99,7 +99,7 @@ class Mahasiswa extends CI_Controller
             );
             $this->mahasiswa_model->insert_data($data, 'mahasiswa');
             $this->session->set_flashdata('pesan', '<div class="alert alert-success alert-dismissible fade show" role="alert">
-                Data mahasiswa berhasil ditambahkan!<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <i class="icon fas fa-check"></i> Data mahasiswa berhasil ditambahkan!<button type="button" class="close" data-dismiss="alert" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
                 </button>
                 </div>');
@@ -216,7 +216,7 @@ class Mahasiswa extends CI_Controller
             );
             $this->mahasiswa_model->update_data($where, $data, 'mahasiswa');
             $this->session->set_flashdata('pesan', '<div class="alert alert-success alert-dismissible fade show" role="alert">
-                Data mahasiswa berhasil diupdate!<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <i class="icon fas fa-check"></i> Data mahasiswa berhasil diupdate!<button type="button" class="close" data-dismiss="alert" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
                 </button>
                 </div>');
@@ -229,7 +229,7 @@ class Mahasiswa extends CI_Controller
         $where = array('id' => $id);
         $this->mahasiswa_model->hapus_data($where, 'mahasiswa');
         $this->session->set_flashdata('pesan', '<div class="alert alert-success alert-dismissible fade show" role="alert">
-            Data mahasiswa berhasil dihapus!<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <i class="icon fas fa-check"></i> Data mahasiswa berhasil dihapus!<button type="button" class="close" data-dismiss="alert" aria-label="Close">
             <span aria-hidden="true">&times;</span>
             </button>
             </div>');

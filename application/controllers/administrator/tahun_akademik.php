@@ -50,7 +50,7 @@ class Tahun_akademik extends CI_Controller
             );
             $this->tahun_akademik_model->insert_data($data, 'tahun_akademik');
             $this->session->set_flashdata('pesan', '<div class="alert alert-success alert-dismissible fade show" role="alert">
-                Data tahun akademik berhasil ditambahkan!<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <i class="icon fas fa-check"></i> Data tahun akademik berhasil ditambahkan!<button type="button" class="close" data-dismiss="alert" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
                 </button>
                 </div>');
@@ -107,7 +107,7 @@ class Tahun_akademik extends CI_Controller
         );
         $this->tahun_akademik_model->update_data($where, $data, 'tahun_akademik');
         $this->session->set_flashdata('pesan', '<div class="alert alert-success alert-dismissible fade show" role="alert">
-            Data tahun akademik berhasil diupdate!<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <i class="icon fas fa-check"></i> Data tahun akademik berhasil diupdate!<button type="button" class="close" data-dismiss="alert" aria-label="Close">
             <span aria-hidden="true">&times;</span>
             </button>
             </div>');
@@ -119,7 +119,7 @@ class Tahun_akademik extends CI_Controller
         $where = array('id_thn_akad' => $id);
         $this->tahun_akademik_model->hapus_data($where, 'tahun_akademik');
         $this->session->set_flashdata('pesan', '<div class="alert alert-success alert-dismissible fade show" role="alert">
-            Data tahun akademik berhasil dihapus!<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <i class="icon fas fa-check"></i> Data tahun akademik berhasil dihapus!<button type="button" class="close" data-dismiss="alert" aria-label="Close">
             <span aria-hidden="true">&times;</span>
             </button>
             </div>');

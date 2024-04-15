@@ -61,7 +61,7 @@ class Tentang_kampus extends CI_Controller
     );
     $this->tentang_kampus_model->update_data($where, $data, 'tentang_kampus');
     $this->session->set_flashdata('pesan', '<div class="alert alert-success alert-dismissible fade show" role="alert">
-          Data tentang kampus berhasil diupdate!<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+    <i class="icon fas fa-check"></i> Data tentang kampus berhasil diupdate!<button type="button" class="close" data-dismiss="alert" aria-label="Close">
           <span aria-hidden="true">&times;</span>
           </button>
           </div>');

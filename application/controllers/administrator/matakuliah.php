@@ -55,7 +55,7 @@ class Matakuliah extends CI_Controller
             );
             $this->matakuliah_model->insert_data($data, 'matakuliah');
             $this->session->set_flashdata('pesan', '<div class="alert alert-success alert-dismissible fade show" role="alert">
-                Data matakuliah berhasil ditambahkan!<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <i class="icon fas fa-check"></i> Data matakuliah berhasil ditambahkan!<button type="button" class="close" data-dismiss="alert" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
                 </button>
                 </div>');
@@ -144,7 +144,7 @@ class Matakuliah extends CI_Controller
         );
         $this->matakuliah_model->update_data($where, $data, 'matakuliah');
         $this->session->set_flashdata('pesan', '<div class="alert alert-success alert-dismissible fade show" role="alert">
-            Data matakuliah berhasil diupdate!<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <i class="icon fas fa-check"></i> Data matakuliah berhasil diupdate!<button type="button" class="close" data-dismiss="alert" aria-label="Close">
             <span aria-hidden="true">&times;</span>
             </button>
             </div>');
@@ -156,7 +156,7 @@ class Matakuliah extends CI_Controller
         $where = array('kode_matakuliah' => $id);
         $this->matakuliah_model->hapus_data($where, 'matakuliah');
         $this->session->set_flashdata('pesan', '<div class="alert alert-success alert-dismissible fade show" role="alert">
-            Data matakuliah berhasil dihapus!<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <i class="icon fas fa-check"></i> Data matakuliah berhasil dihapus!<button type="button" class="close" data-dismiss="alert" aria-label="Close">
             <span aria-hidden="true">&times;</span>
             </button>
             </div>');

@@ -63,7 +63,7 @@ class Identitas extends CI_Controller
     );
     $this->identitas_model->update_data($where, $data, 'identitas');
     $this->session->set_flashdata('pesan', '<div class="alert alert-success alert-dismissible fade show" role="alert">
-          Data identitas berhasil diupdate!<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+    <i class="icon fas fa-check"></i> Data identitas berhasil diupdate!<button type="button" class="close" data-dismiss="alert" aria-label="Close">
           <span aria-hidden="true">&times;</span>
           </button>
           </div>');
